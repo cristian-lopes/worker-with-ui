@@ -3,16 +3,16 @@
 	Publish to C:\inetpub\services\WindowsServiceApiDemo\App\netcoreapp3.1
 	Run cmd as Administrator:
 
-	sc create WorkerMultiServices binpath= C:\inetpub\services\WindowsServiceApiDemo\App\netcoreapp3.1\WindowsServiceApiDemo.exe start= auto DisplayName= "Worker Multi-Services"
-	sc description WorkerMultiServices "This is a Windows Service Api Demo, done in dotnet core 3.1"
+	sc create MultServicesWorker binpath= C:\inetpub\services\WindowsServiceApiDemo\App\netcoreapp3.1\WindowsServiceApiDemo.exe start= auto DisplayName= "Mult-Services Worker"
+	sc description MultServicesWorker "This is a Mult-Services Worker, with visual interface"
 
 Additional options:
 
-	sc start WorkerMultiServices
-	sc stop WorkerMultiServices
-	sc delete WorkerMultiServices
+	sc start MultServicesWorker
+	sc stop MultServicesWorker
+	sc delete MultServicesWorker
 
-Or open services.msc find 'Worker Multi-Services' and start / stop from there
+Or open services.msc find 'Mult-Services Worker' and start / stop from there
 
 To test the service:
 
